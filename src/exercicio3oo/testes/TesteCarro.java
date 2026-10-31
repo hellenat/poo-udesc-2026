@@ -1,6 +1,6 @@
-package exercicio2oo.testes;
+package exercicio3oo.testes;
 
-import exercicio2oo.classes.Carro;
+import exercicio3oo.classes.Carro;
 
 public class TesteCarro {
     private static final String MODELO = "Civic";
@@ -10,14 +10,14 @@ public class TesteCarro {
 
     public static void main(String[] args) {
         Carro carro = new Carro();
-        carro.modelo = MODELO;
-        carro.marca = MARCA;
-        carro.ano = ANO;
-        carro.velocidade = VELOCIDADE;
+        carro.setModelo(MODELO);
+        carro.setMarca(MARCA);
+        carro.setAno(ANO);
+        carro.setVelocidade(VELOCIDADE);
 
-        System.out.println("Modelo: " + carro.modelo);
-        System.out.println("Marca: " + carro.marca);
-        System.out.println("Ano: " + carro.ano);
-        System.out.println("Velocidade: " + carro.velocidade);
+        System.out.printf("Modelo: %s%n", carro.getModelo());
+        System.out.printf("Marca: %s%n", carro.getMarca());
+        System.out.printf("Ano: %d%n", carro.getAno());
+        System.out.printf("Velocidade: %.1f%n", carro.getVelocidade());
     }
 }
