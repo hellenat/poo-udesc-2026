@@ -1,6 +1,6 @@
-package exercicio2oo.testes;
+package exercicio3oo.testes;
 
-import exercicio2oo.classes.Retangulo;
+import exercicio3oo.classes.Retangulo;
 
 public class TesteRetangulo {
     private static final double LARGURA = 5.0;
@@ -8,10 +8,10 @@ public class TesteRetangulo {
 
     public static void main(String[] args) {
         Retangulo retangulo = new Retangulo();
-        retangulo.largura = LARGURA;
-        retangulo.altura = ALTURA;
+        retangulo.setLargura(LARGURA);
+        retangulo.setAltura(ALTURA);
 
-        System.out.println("Largura: " + retangulo.largura);
-        System.out.println("Altura: " + retangulo.altura);
+        System.out.printf("Largura: %.1f%n", retangulo.getLargura());
+        System.out.printf("Altura: %.1f%n", retangulo.getAltura());
     }
 }
