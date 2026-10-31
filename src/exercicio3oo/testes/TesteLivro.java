@@ -1,6 +1,6 @@
-package exercicio2oo.testes;
+package exercicio3oo.testes;
 
-import exercicio2oo.classes.Livro;
+import exercicio3oo.classes.Livro;
 
 public class TesteLivro {
     private static final String TITULO = "Dom Casmurro";
@@ -10,14 +10,14 @@ public class TesteLivro {
 
     public static void main(String[] args) {
         Livro livro = new Livro();
-        livro.titulo = TITULO;
-        livro.autor = AUTOR;
-        livro.genero = GENERO;
-        livro.emprestado = EMPRESTADO;
+        livro.setTitulo(TITULO);
+        livro.setAutor(AUTOR);
+        livro.setGenero(GENERO);
+        livro.setEmprestado(EMPRESTADO);
 
-        System.out.println("Titulo: " + livro.titulo);
-        System.out.println("Autor: " + livro.autor);
-        System.out.println("Genero: " + livro.genero);
-        System.out.println("Emprestado: " + livro.emprestado);
+        System.out.printf("Titulo: %s%n", livro.getTitulo());
+        System.out.printf("Autor: %s%n", livro.getAutor());
+        System.out.printf("Genero: %s%n", livro.getGenero());
+        System.out.printf("Emprestado: %b%n", livro.isEmprestado());
     }
 }
